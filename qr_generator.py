@@ -81,6 +81,9 @@ def display_qr_image(image, window_title="img"):
     label.image = photo
     label.pack(padx=10, pady=10)
 
+    # close on escape in addition to the window close button
+    root.bind("<Escape>", lambda event: root.destroy())
+
     root.resizable(False, False)
     root.mainloop()
 

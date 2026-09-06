@@ -1,0 +1,31 @@
+# virtual environments
+.venv/
+.venv-*/
+venv/
+env/
+
+# python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# generated output
+# the script writes qrcode.png on every run, so it stays untracked
+# the committed sample lives at docs/example-output.png
+qrcode.png
+
+# course documents (submitted to the LMS, not versioned here)
+*.docx
+*.pdf
+~$*.docx
+~$*.doc
+
+# macOS
+.DS_Store
+.AppleDouble
+__MACOSX/
+
+# editors
+.idea/
+.vscode/
+*.swp
